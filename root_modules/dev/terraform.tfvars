@@ -1,6 +1,10 @@
 rgs = {
   rg1 = {
-    name     = "rg-pearce"
+    name     = "rg1-pearce"
+    location = "East US"
+  }
+  rg2 = {
+    name     = "rg2-pearce"
     location = "East US"
   }
 }
