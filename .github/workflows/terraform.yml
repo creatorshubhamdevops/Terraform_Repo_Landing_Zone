@@ -67,7 +67,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: environments/preprod
+        working-directory: root_modules/dev
 
     steps:
       - name: Checkout code
@@ -80,14 +80,14 @@ jobs:
         run: |
           az login \
             --service-principal \
-            --username "9eac3105-2ec2-4f37-8b90-3d1d851fce11" \
-            --password "W4V8Q~NmAomNOfMjBrTUT.rcYDEUB8YgKRzAgduC" \
-            --tenant "0f7010fd-209e-4344-8457-043ffb37143b"
+            --username "2abb0848-e93e-42a6-b708-5d07b705617e" \
+            --password "WnL8Q~_vA5VrufMrIMswWh2N52NZ3sT_Z6ulLa1F" \
+            --tenant "4e7e60b9-d7ff-44db-af8d-a2e290bb8a3f"
 
       - name: Set Azure Subscription
         run: |
           az account set \
-            --subscription "bc9d2c5e-f99f-4142-8f22-8f6dae37180d"
+            --subscription "9386605f-d403-4aa4-8915-35a1b23d8ef0"
 
       - name: Check Azure Login
         run: az account show
